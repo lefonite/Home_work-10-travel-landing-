@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap');
+$brand-color: #1ED400 ;
+
+@mixin flex( $display, $flex-flow, $align, $justify){
+    display: $display;
+    flex-flow: $flex-flow;
+    align-items: $align;
+    justify-content: $justify;
+}
+.body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+Button{
+   background-color: $brand-color; 
+   padding: 21px 110px;
+   font-family: Lato;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+}
+
