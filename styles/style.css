@@ -1,12 +1,109 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap");
-.body {
+body {
   font-family: "Lato", sans-serif;
   font-family: "Lora", serif;
   font-family: "Quicksand", sans-serif;
   font-family: "Roboto Slab", serif;
 }
 
-Button {
+h2 {
+  font-family: Roboto Slab;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 74px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bg-1 {
+  background-image: url(../img/bg-1.png);
+  background-position: center;
+  background-size: cover;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 5%;
+  gap: 20px;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.header__logo a, .header__nav a {
+  color: #ffffff;
+}
+.header__nav svg, .header__social svg {
+  fill: #ffffff;
+}
+
+.footer {
+  background-image: url(../img/bg-4.png);
+  background-position: center;
+  background-size: cover;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 90px 5%;
+}
+.footer__logo a, .footer__nav a {
+  color: #000000;
+}
+.footer__nav svg, .footer__social svg {
+  fill: #000000;
+}
+
+.logo {
+  font-family: Roboto Slab;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 205px;
+}
+
+.social {
+  width: 205px;
+}
+.social ul {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  gap: 40px;
+}
+
+.nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 56px;
+}
+.nav__link a {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.langBar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+}
+
+.action {
   background-color: #1ED400;
   padding: 21px 110px;
   font-family: Lato;
@@ -17,4 +114,295 @@ Button {
   text-transform: uppercase;
   text-align: left;
   color: #fff;
+}
+.action--bigger {
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.promoContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 65px;
+  padding: 200px 0 110px;
+}
+
+.promo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  max-width: 70%;
+  padding: 40px;
+}
+.promo__title {
+  color: #fff;
+  font-family: Lora;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.promo__subtitle {
+  color: #fff;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.aboutUs {
+  padding: 140px 5%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.aboutUs__title {
+  color: #333333;
+}
+.aboutUs__description {
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #333333;
+  max-width: 1060px;
+  margin: 32px 0 64px;
+}
+
+.bullets {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  width: 100%;
+}
+.bullets__item :nth-child(1) {
+  font-family: Roboto Slab;
+  font-size: 144px;
+  font-weight: 700;
+  line-height: 190px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1ED400;
+}
+.bullets__description {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  margin-top: -100px;
+}
+.bullets__description :nth-child(2) {
+  font-family: Quicksand;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #333333;
+}
+
+.bg-2 {
+  background-image: url(../img/bg-2.png);
+  background-position: center;
+  background-size: cover;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 60px 5%;
+}
+
+.discount {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.discount__title {
+  color: #fff;
+}
+.discount__subtitle {
+  font-family: Roboto Slab;
+  font-size: 144px;
+  font-weight: 700;
+  line-height: 144px;
+  letter-spacing: 0em;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 16px 0;
+}
+.discount__date {
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.discount__description {
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #fff;
+  text-align: center;
+  max-width: 1060px;
+  margin: 32px 16px;
+}
+.discount hr {
+  width: 20%;
+  height: 2px;
+  background-color: #fff;
+}
+.discount__value {
+  font-family: Quicksand;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px 0 24px;
+}
+
+.media {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+.media__item {
+  padding-top: 10px;
+  background-position: center;
+  background-size: cover;
+  width: 513px;
+  height: 342px;
+}
+.media__item--Prague {
+  background-image: url(../img/Prague.png);
+}
+.media__item--Portugal {
+  background-image: url(../img/Portugal.png);
+}
+.media__item--Dubai {
+  background-image: url(../img/Dubai.png);
+}
+.media__item--Thailand {
+  padding: 10px;
+  background-image: url(../img/Thailand.png);
+  background-position: center;
+  background-size: cover;
+  width: 441px;
+  height: 294px;
+}
+.media__item--Thailand svg {
+  position: relative;
+  top: 100px;
+  left: 200px;
+  cursor: pointer;
+}
+.media__item--story {
+  padding: 10px;
+  background-image: url(../img/story.png);
+  background-position: center;
+  background-size: cover;
+}
+.media__item--story svg {
+  position: relative;
+  top: 110px;
+  left: 240px;
+  cursor: pointer;
+}
+.media__item--Unexplored {
+  padding: 10px;
+  background-image: url(../img/Unexplored.png);
+  background-position: center;
+  background-size: cover;
+  width: 441px;
+  height: 294px;
+}
+.media__item--Unexplored svg {
+  position: relative;
+  top: 100px;
+  left: 200px;
+  cursor: pointer;
+}
+.media__name {
+  background-color: #000000;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+}
+.media__name span {
+  font-family: Roboto Slab;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.instagram {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.instagram span {
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #333333;
+}
+
+.media-wrapper {
+  padding: 120px 5%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.media-wrapper__title {
+  color: #333333;
+}
+.media-wrapper--videoBlock {
+  padding: 50px 5%;
+  background-image: url(../img/bg-3.png);
+  background-position: center;
+  background-size: cover;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.media-wrapper--videoBlock h2 {
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
